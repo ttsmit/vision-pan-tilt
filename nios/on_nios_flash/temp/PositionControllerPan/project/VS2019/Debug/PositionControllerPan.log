@@ -1,0 +1,5 @@
+﻿cl : command line warning D9035: option 'Gm' has been deprecated and will be removed in a future release
+  xxmain.c
+C:\Users\stijn\Documents\MASTER EMSYS\ESL\temp\PositionControllerPan\xxmain.c(59,1): warning C4244: 'initializing': conversion from 'XXDouble' to 'float', possible loss of data
+C:\Users\stijn\Documents\MASTER EMSYS\ESL\temp\PositionControllerPan\xxmain.c(60,1): warning C4244: 'initializing': conversion from 'XXDouble' to 'float', possible loss of data
+  PositionControllerPan.vcxproj -> C:\Users\stijn\Documents\MASTER EMSYS\ESL\temp\PositionControllerPan\project\VS2019\Debug\PositionControllerPan.exe

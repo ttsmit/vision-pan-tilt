@@ -36,7 +36,7 @@ architecture behaviour of QuadratureEncoder is
 	signal Bold : std_logic;
 	signal Pold : signed(RESOLUTION-1 downto 0) := (others => '0');
 begin	
-	position_calculation: process(clk) is
+	position_calculation: process(clk, rst) is
 	  variable pos : signed(RESOLUTION-1 downto 0);
 	begin
 	  if (rst = '1') then
