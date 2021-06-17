@@ -1,3 +1,0 @@
-/home/tijmens/stack/Embedded Systems/ESL/vision-pan-tilt/overo/build/CMakeFiles/rebuild_cache.dir
-/home/tijmens/stack/Embedded Systems/ESL/vision-pan-tilt/overo/build/CMakeFiles/edit_cache.dir
-/home/tijmens/stack/Embedded Systems/ESL/vision-pan-tilt/overo/build/CMakeFiles/main.dir
