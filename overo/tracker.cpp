@@ -1,4 +1,4 @@
-#include <iostream>
+//#include <iostream>
 #include <string>
 #include <opencv2/core.hpp>
 #include <opencv2/videoio.hpp>
@@ -67,9 +67,9 @@ int Track::run(int* x, int* y){
 	cv::Moments m = moments(threshFrame, false);
 	cv::Point com(m.m10 / m.m00, m.m01 / m.m00);
 	
-	if (0 < com.x < Track::width && 0 < com.y < Track::heigth){
-		*x = com.x;
-		*y = com.y;
+	if (0 < com.x && com.x < Track::width && 0 < com.y && com.y < Track::heigth){
+		*x = -(com.x - Track::width/2);
+		*y = -(com.y - Track::heigth/2);
 		return 1;
 	}
 
