@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EncoderPWMTest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollerpan\EulerAngles.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollerpan\motionprofiles.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollerpan\xxfuncs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollerpan\xxinteg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollerpan\xxinverse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollerpan\xxmain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollerpan\xxmatrix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollerpan\xxmodel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollerpan\xxsubmod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollertilt\EulerAngles.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollertilt\motionprofiles.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollertilt\xxfuncs.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollertilt\xxinteg.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollertilt\xxinverse.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollertilt\xxmain.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollertilt\xxmatrix.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollertilt\xxmodel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="temp\positioncontrollertilt\xxsubmod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="temp\positioncontrollerpan\EulerAngles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollerpan\motionprofiles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollerpan\xxfuncs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollerpan\xxinteg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollerpan\xxmatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollerpan\xxmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollerpan\xxsubmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollerpan\xxtypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollertilt\EulerAngles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollertilt\motionprofiles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollertilt\xxfuncs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollertilt\xxinteg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollertilt\xxmatrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollertilt\xxmodel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollertilt\xxsubmod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="temp\positioncontrollertilt\xxtypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
