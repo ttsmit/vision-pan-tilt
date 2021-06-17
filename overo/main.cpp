@@ -1,7 +1,9 @@
 #include <iostream>
 #include <math.h>
 #include "tracker.cpp"
-#include "gpmc_driver_cpp.h"
+#include "gpmc_driver_cpp.cpp"
+
+#define PI 3.1415926535
 
 float posToAngle (int, float);
 
@@ -14,6 +16,7 @@ int main(){
 
 	char* gpmcDevice = "/dev/gpmc_fpga";
 	gpmc_driver Device(gpmcDevice);
+	//if(!Device.isValid()) return -1;
 
 	int x, y;
 	while(1){
@@ -21,7 +24,11 @@ int main(){
 			printf("x: %dpx, y: %dpx\n", x, y);
 			float pan = posToAngle(x, 0.43);
 			float tilt = posToAngle(y, 0.43);
-			printf("pan: %frad, tilt: %frad\n", pan, tilt);
+			unsigned short pan_s = static_cast<unsigned short>(pan + PI) * 10000;
+			unsigned short tilt_s = static_cast<unsigned short>(tilt + PI) * 10000;
+			printf("pan: %frad, tilt: %frad\n", pan_s, tilt);
+			Device.setValue(pan_s, 2);
+			Device.setValue(tilt_s, 3);
 		}
 	}
 	return 0;
