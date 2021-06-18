@@ -24,7 +24,7 @@ int main(){
 			printf("x: %dpx, y: %dpx\n", x, y);
 			unsigned short pan = posToAngle(x, 0.43);
 			unsigned short tilt = posToAngle(y, 0.43);
-			printf("pan: %frad, tilt: %frad\n", pan, tilt);
+			printf("pan: %urad, tilt: %urad\n", pan, tilt);
 			Device.setValue(pan, 2);
 			Device.setValue(tilt, 3);
 		}
@@ -36,5 +36,7 @@ int main(){
 unsigned short posToAngle (int position, float scale){
 	float distance = position * scale;
 	float angle = atan2(distance, 100);
-	return static_cast<unsigned short>(angle + PI) * 10000;
+	printf("angle:%f\n", angle);
+	unsigned short ret = (unsigned short) ((angle + PI) * 1000);
+	return ret; 
 }
