@@ -5,7 +5,7 @@
 
 #define PI 3.1415926535
 
-float posToAngle (int, float);
+unsigned short posToAngle (int, float);
 
 int main(){
 	std::string videoDevice = "/dev/video0";
@@ -22,20 +22,19 @@ int main(){
 	while(1){
 		if (tracker.run(&x, &y) == 1){
 			printf("x: %dpx, y: %dpx\n", x, y);
-			float pan = posToAngle(x, 0.43);
-			float tilt = posToAngle(y, 0.43);
-			unsigned short pan_s = static_cast<unsigned short>(pan + PI) * 10000;
-			unsigned short tilt_s = static_cast<unsigned short>(tilt + PI) * 10000;
-			printf("pan: %frad, tilt: %frad\n", pan_s, tilt);
-			Device.setValue(pan_s, 2);
-			Device.setValue(tilt_s, 3);
+			unsigned short pan = posToAngle(x, 0.43);
+			unsigned short tilt = posToAngle(y, 0.43);
+			printf("pan: %frad, tilt: %frad\n", pan, tilt);
+			Device.setValue(pan, 2);
+			Device.setValue(tilt, 3);
 		}
 	}
 	return 0;
 } 
 
 
-float posToAngle (int position, float scale){
+unsigned short posToAngle (int position, float scale){
 	float distance = position * scale;
-	return atan2(distance, 100);
+	float angle = atan2(distance, 100);
+	return static_cast<unsigned short>(angle + PI) * 10000;
 }
