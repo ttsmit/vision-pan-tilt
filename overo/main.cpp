@@ -8,11 +8,11 @@
 unsigned short posToAngle (int, float);
 
 int main(){
-	std::string videoDevice = "/dev/video0";
+	std::string videoDevice = "/dev/video2";
 	int createdSuccesfully = 0;
-	Track tracker(videoDevice, 320, 180, &createdSuccesfully);
+	Track tracker(videoDevice, 320, 240, &createdSuccesfully);
 	if (createdSuccesfully == 0) return -1;
-	tracker.setParameters(81, 57, 96, 95, 116, 241);
+	tracker.setParameters(71, 128, 92, 103, 181, 255);
 
 	char* gpmcDevice = "/dev/gpmc_fpga";
 	gpmc_driver Device(gpmcDevice);
@@ -22,8 +22,8 @@ int main(){
 	while(1){
 		if (tracker.run(&x, &y) == 1){
 			printf("x: %dpx, y: %dpx\n", x, y);
-			unsigned short pan = posToAngle(x, 0.43);
-			unsigned short tilt = posToAngle(y, 0.43);
+			unsigned short pan = posToAngle(x, 0.3);
+			unsigned short tilt = posToAngle(y, 0.3);
 			printf("pan: %urad, tilt: %urad\n", pan, tilt);
 			Device.setValue(pan, 2);
 			Device.setValue(tilt, 3);
