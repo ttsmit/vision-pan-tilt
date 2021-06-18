@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\NiosControl",
+    "\\NiosControl\\NiosControl",
+    "\\temp",
+    "\\temp\\PositionControllerTilt"
   ],
+  "SelectedNode": "\\NiosControl",
   "PreviewInSolutionExplorer": false
 }

@@ -36,7 +36,7 @@ int main()
 	XXDouble y [2 + 1];
 
 	/* Initialize the inputs and outputs with correct initial values */
-	u[0] = 1.0;		/* in */
+	u[0] = 2.0;		/* in */
 	u[1] = 0.0;		/* position */
 
 	y[0] = 0.0;		/* corr */
